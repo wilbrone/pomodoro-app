@@ -21,7 +21,11 @@ $ source virtual/bin/activate
 ```bash
 $ pip install -r requirements.txt
 ```
+4. Run the following command to start a local development server running on Http://localhost:5000
 
+```bash
+$ ./start.sh
+```
 ## License
 
 MIT License
