@@ -1,6 +1,8 @@
 import os
 
 class Config:
+	SQLALCHEMY_TRACK_MODIFICATIONS = False
+	SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://username:password@localhost/database_name'
 
 	@staticmethod
 	def init_app(app):
