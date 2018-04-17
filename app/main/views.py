@@ -4,5 +4,5 @@ from . import main
 # Views
 @main.route('/')
 def index():
-	title = 'One Minute Pitch'
+	title = 'Flask Base'
 	return render_template('index.html',title = title)
