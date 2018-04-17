@@ -2,6 +2,7 @@ import os
 
 class Config:
 	SQLALCHEMY_TRACK_MODIFICATIONS = False
+	UPLOADED_PHOTOS_DEST ='app/static/photos'
 	SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://username:password@localhost/database_name'
 
 	@staticmethod
