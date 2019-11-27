@@ -1,0 +1,3 @@
+Hello {{user.username}}
+Welcome to Pomodoro;
+We help you track your activities and set time for all your days time usage.

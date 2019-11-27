@@ -3,7 +3,7 @@ import os
 class Config:
 	SQLALCHEMY_TRACK_MODIFICATIONS = False
 	UPLOADED_PHOTOS_DEST ='app/static/photos'
-	SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://username:password@localhost/database_name'
+	SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://aphya5:NewPasword@localhost/pomodoro'
 
 	MAIL_SERVER = 'smtp.googlemail.com'
 	MAIL_PORT = 587
@@ -21,7 +21,8 @@ class ProdConfig(Config):
 
 
 class DevConfig(Config):
-    DEBUG = True
+	SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://aphya5:NewPasword@localhost/pomodoro'
+	DEBUG = True
 
 config_options = {
 'development':DevConfig,
